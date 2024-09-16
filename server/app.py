@@ -13,6 +13,9 @@ class ExampleRoutes(Resource):
 
     def get(self):
         return { 'message': 'This is an example' }, 200
+    
+    def post(self):
+        return {'message':'Post request created successfully'}, 201
 
 
 api.add_resource(ExampleRoutes, '/examples')
